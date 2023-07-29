@@ -1,6 +1,6 @@
 //
 //  UIColorУxtension.swift
-//  Events_ios
+//  
 //
 //  Created by Евгений Таракин on 12.09.2022.
 //

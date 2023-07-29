@@ -15,14 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            let tabBarController = UITabBarController()
-            let readersViewController = ReadersViewController()
-            let readersNavigationController = UINavigationController(rootViewController: readersViewController)
-            readersNavigationController.navigationBar.isHidden = true
-            let booksViewController = BooksViewController()
-            let booksNavigationController = UINavigationController(rootViewController: booksViewController)
-            booksNavigationController.navigationBar.isHidden = true
-            tabBarController.viewControllers = [readersNavigationController, booksNavigationController]
+            let tabBarController = MainTabBarController()
             window.rootViewController = tabBarController
             self.window = window
             window.makeKeyAndVisible()

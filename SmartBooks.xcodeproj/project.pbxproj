@@ -15,6 +15,20 @@
 		1B3A3E602A74280200CEF5C2 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E5F2A74280200CEF5C2 /* BooksViewController.swift */; };
 		1B3A3E652A742BD700CEF5C2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E642A742BD700CEF5C2 /* UIViewControllerExtension.swift */; };
 		1B3A3E682A742C3500CEF5C2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E672A742C3500CEF5C2 /* UIColorExtension.swift */; };
+		1B3A3E6B2A750C8300CEF5C2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E6A2A750C8300CEF5C2 /* MainTabBarController.swift */; };
+		1B3A3E6E2A75157E00CEF5C2 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E6D2A75157E00CEF5C2 /* Font.swift */; };
+		1B3A3E772A75161800CEF5C2 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E702A75161800CEF5C2 /* Manrope-Light.ttf */; };
+		1B3A3E782A75161800CEF5C2 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E712A75161800CEF5C2 /* Manrope-ExtraLight.ttf */; };
+		1B3A3E792A75161800CEF5C2 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E722A75161800CEF5C2 /* Manrope-Medium.ttf */; };
+		1B3A3E7A2A75161800CEF5C2 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E732A75161800CEF5C2 /* Manrope-Regular.ttf */; };
+		1B3A3E7B2A75161800CEF5C2 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E742A75161800CEF5C2 /* Manrope-SemiBold.ttf */; };
+		1B3A3E7C2A75161800CEF5C2 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E752A75161800CEF5C2 /* Manrope-ExtraBold.ttf */; };
+		1B3A3E7D2A75161800CEF5C2 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B3A3E762A75161800CEF5C2 /* Manrope-Bold.ttf */; };
+		1B3A3E802A75199200CEF5C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B3A3E7F2A75199200CEF5C2 /* SnapKit */; };
+		1B3A3E822A751AB200CEF5C2 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E812A751AB200CEF5C2 /* NavigationView.swift */; };
+		1B3A3E862A751C7E00CEF5C2 /* AdditionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E852A751C7E00CEF5C2 /* AdditionButton.swift */; };
+		1B3A3E8A2A752DE500CEF5C2 /* AdditionReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E892A752DE500CEF5C2 /* AdditionReaderViewController.swift */; };
+		1B3A3E8E2A752E2100CEF5C2 /* AdditionBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E8D2A752E2100CEF5C2 /* AdditionBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +42,19 @@
 		1B3A3E5F2A74280200CEF5C2 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		1B3A3E642A742BD700CEF5C2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		1B3A3E672A742C3500CEF5C2 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		1B3A3E6A2A750C8300CEF5C2 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1B3A3E6D2A75157E00CEF5C2 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1B3A3E702A75161800CEF5C2 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		1B3A3E712A75161800CEF5C2 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1B3A3E722A75161800CEF5C2 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		1B3A3E732A75161800CEF5C2 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		1B3A3E742A75161800CEF5C2 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		1B3A3E752A75161800CEF5C2 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1B3A3E762A75161800CEF5C2 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		1B3A3E812A751AB200CEF5C2 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		1B3A3E852A751C7E00CEF5C2 /* AdditionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionButton.swift; sourceTree = "<group>"; };
+		1B3A3E892A752DE500CEF5C2 /* AdditionReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionReaderViewController.swift; sourceTree = "<group>"; };
+		1B3A3E8D2A752E2100CEF5C2 /* AdditionBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3A3E802A75199200CEF5C2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +91,7 @@
 				1B3A3E5A2A74267C00CEF5C2 /* AppDelegate */,
 				1B3A3E632A742ACA00CEF5C2 /* CustomUI */,
 				1B3A3E622A742ABE00CEF5C2 /* Extensions */,
+				1B3A3E6C2A75153A00CEF5C2 /* Font */,
 				1B3A3E5B2A74269100CEF5C2 /* StartApplication */,
 				1B3A3E5C2A74275C00CEF5C2 /* MainApplication */,
 				1B3A3E612A74293E00CEF5C2 /* Assets */,
@@ -91,6 +120,7 @@
 		1B3A3E5C2A74275C00CEF5C2 /* MainApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1B3A3E692A750C8300CEF5C2 /* MainTabBarController */,
 				1B3A3E5D2A7427BB00CEF5C2 /* Readers */,
 				1B3A3E5E2A7427D300CEF5C2 /* Books */,
 			);
@@ -100,7 +130,8 @@
 		1B3A3E5D2A7427BB00CEF5C2 /* Readers */ = {
 			isa = PBXGroup;
 			children = (
-				1B3A3E4A2A74264600CEF5C2 /* ReadersViewController.swift */,
+				1B3A3E872A752DBB00CEF5C2 /* Main */,
+				1B3A3E882A752DC400CEF5C2 /* AdditionReader */,
 			);
 			path = Readers;
 			sourceTree = "<group>";
@@ -108,7 +139,8 @@
 		1B3A3E5E2A7427D300CEF5C2 /* Books */ = {
 			isa = PBXGroup;
 			children = (
-				1B3A3E5F2A74280200CEF5C2 /* BooksViewController.swift */,
+				1B3A3E8B2A752E0000CEF5C2 /* Main */,
+				1B3A3E8C2A752E0600CEF5C2 /* AdditionBook */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -133,8 +165,73 @@
 		1B3A3E632A742ACA00CEF5C2 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				1B3A3E812A751AB200CEF5C2 /* NavigationView.swift */,
+				1B3A3E852A751C7E00CEF5C2 /* AdditionButton.swift */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		1B3A3E692A750C8300CEF5C2 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E6A2A750C8300CEF5C2 /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		1B3A3E6C2A75153A00CEF5C2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E6F2A75160C00CEF5C2 /* Monrope */,
+				1B3A3E6D2A75157E00CEF5C2 /* Font.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		1B3A3E6F2A75160C00CEF5C2 /* Monrope */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E762A75161800CEF5C2 /* Manrope-Bold.ttf */,
+				1B3A3E752A75161800CEF5C2 /* Manrope-ExtraBold.ttf */,
+				1B3A3E712A75161800CEF5C2 /* Manrope-ExtraLight.ttf */,
+				1B3A3E702A75161800CEF5C2 /* Manrope-Light.ttf */,
+				1B3A3E722A75161800CEF5C2 /* Manrope-Medium.ttf */,
+				1B3A3E732A75161800CEF5C2 /* Manrope-Regular.ttf */,
+				1B3A3E742A75161800CEF5C2 /* Manrope-SemiBold.ttf */,
+			);
+			path = Monrope;
+			sourceTree = "<group>";
+		};
+		1B3A3E872A752DBB00CEF5C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E4A2A74264600CEF5C2 /* ReadersViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1B3A3E882A752DC400CEF5C2 /* AdditionReader */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E892A752DE500CEF5C2 /* AdditionReaderViewController.swift */,
+			);
+			path = AdditionReader;
+			sourceTree = "<group>";
+		};
+		1B3A3E8B2A752E0000CEF5C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E5F2A74280200CEF5C2 /* BooksViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1B3A3E8C2A752E0600CEF5C2 /* AdditionBook */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E8D2A752E2100CEF5C2 /* AdditionBookViewController.swift */,
+			);
+			path = AdditionBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +250,9 @@
 			dependencies = (
 			);
 			name = SmartBooks;
+			packageProductDependencies = (
+				1B3A3E7F2A75199200CEF5C2 /* SnapKit */,
+			);
 			productName = SmartBooks;
 			productReference = 1B3A3E432A74264600CEF5C2 /* SmartBooks.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +281,9 @@
 				Base,
 			);
 			mainGroup = 1B3A3E3A2A74264600CEF5C2;
+			packageReferences = (
+				1B3A3E7E2A75199200CEF5C2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1B3A3E442A74264600CEF5C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,7 +299,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3A3E532A74264800CEF5C2 /* LaunchScreen.storyboard in Resources */,
+				1B3A3E782A75161800CEF5C2 /* Manrope-ExtraLight.ttf in Resources */,
+				1B3A3E7A2A75161800CEF5C2 /* Manrope-Regular.ttf in Resources */,
+				1B3A3E772A75161800CEF5C2 /* Manrope-Light.ttf in Resources */,
 				1B3A3E502A74264800CEF5C2 /* Assets.xcassets in Resources */,
+				1B3A3E7C2A75161800CEF5C2 /* Manrope-ExtraBold.ttf in Resources */,
+				1B3A3E792A75161800CEF5C2 /* Manrope-Medium.ttf in Resources */,
+				1B3A3E7D2A75161800CEF5C2 /* Manrope-Bold.ttf in Resources */,
+				1B3A3E7B2A75161800CEF5C2 /* Manrope-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +318,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3A3E4B2A74264600CEF5C2 /* ReadersViewController.swift in Sources */,
+				1B3A3E822A751AB200CEF5C2 /* NavigationView.swift in Sources */,
+				1B3A3E8E2A752E2100CEF5C2 /* AdditionBookViewController.swift in Sources */,
 				1B3A3E602A74280200CEF5C2 /* BooksViewController.swift in Sources */,
 				1B3A3E652A742BD700CEF5C2 /* UIViewControllerExtension.swift in Sources */,
+				1B3A3E6B2A750C8300CEF5C2 /* MainTabBarController.swift in Sources */,
+				1B3A3E6E2A75157E00CEF5C2 /* Font.swift in Sources */,
+				1B3A3E8A2A752DE500CEF5C2 /* AdditionReaderViewController.swift in Sources */,
 				1B3A3E472A74264600CEF5C2 /* AppDelegate.swift in Sources */,
+				1B3A3E862A751C7E00CEF5C2 /* AdditionButton.swift in Sources */,
 				1B3A3E492A74264600CEF5C2 /* SceneDelegate.swift in Sources */,
 				1B3A3E682A742C3500CEF5C2 /* UIColorExtension.swift in Sources */,
 			);
@@ -420,6 +536,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B3A3E7E2A75199200CEF5C2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B3A3E7F2A75199200CEF5C2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B3A3E7E2A75199200CEF5C2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B3A3E3B2A74264600CEF5C2 /* Project object */;
 }
