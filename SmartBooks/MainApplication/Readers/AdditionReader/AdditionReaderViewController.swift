@@ -195,6 +195,8 @@ final class AdditionReaderViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
         dateTextField.text = formatter.string(from: datePicker.date)
+        dateTextField.activateTextField()
+        dateErrorLabel.isHidden = true
         presenter.didChangeDate(dateTextField.text)
     }
     
@@ -211,6 +213,7 @@ extension AdditionReaderViewController: AdditionReaderPresenterToView {
     }
     
     func showErrorValidation(_ error: ErrorValidation) {
+        view.endEditing(true)
         switch error {
         case .name:
             nameTextField.layer.borderColor = UIColor(hex: "FF3236").cgColor
@@ -228,7 +231,6 @@ extension AdditionReaderViewController: AdditionReaderPresenterToView {
             dateTextField.layer.borderColor = UIColor(hex: "FF3236").cgColor
             dateErrorLabel.isHidden = false
         }
-        view.endEditing(true)
     }
 }
 
@@ -241,5 +243,23 @@ extension AdditionReaderViewController: UITextFieldDelegate {
         }
         
         return false
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        textField.layer.borderColor = UIColor(hex: "E3E3EB").cgColor
+        if textField == nameTextField {
+            nameErrorLabel.isHidden = true
+        }
+        textField.activateTextField()
+
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.activateTextField()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.inactivateTextField()
     }
 }
