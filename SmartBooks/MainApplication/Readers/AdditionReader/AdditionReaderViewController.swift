@@ -82,16 +82,8 @@ final class AdditionReaderViewController: UIViewController {
     
     private lazy var nameTextField: UITextField = {
         let textField = UITextField()
-        textField.backgroundColor = .white
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor(hex: "E3E3EB").cgColor
-        textField.layer.cornerRadius = 12
-        textField.layer.masksToBounds = true
+        textField.setupTextField("ФИО читателя")
         textField.delegate = self
-        textField.attributedPlaceholder = NSAttributedString(string: "ФИО читателя",
-                                                             attributes: [NSAttributedString.Key.font : Font.medium.size(15),
-                                                                          NSAttributedString.Key.foregroundColor : UIColor(hex: "1B1F3B", alpha: 0.65)])
-        textField.setLeftPadding()
         
         return textField
     }()
@@ -127,16 +119,8 @@ final class AdditionReaderViewController: UIViewController {
 
     private lazy var dateTextField: UITextField = {
         let textField = UITextField()
-        textField.backgroundColor = .white
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor(hex: "E3E3EB").cgColor
-        textField.layer.cornerRadius = 12
-        textField.layer.masksToBounds = true
-        textField.attributedPlaceholder = NSAttributedString(string: "Дата рождения",
-                                                             attributes: [NSAttributedString.Key.font : Font.medium.size(15),
-                                                                          NSAttributedString.Key.foregroundColor : UIColor(hex: "1B1F3B", alpha: 0.65)])
+        textField.setupTextField("Дата рождения")
         textField.delegate = self
-        textField.setLeftPadding()
         
         datePicker.datePickerMode = .date
         if #available(iOS 13.4, *) {
