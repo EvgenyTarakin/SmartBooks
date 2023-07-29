@@ -22,6 +22,7 @@ extension UIViewController {
         
         navigationView.snp.makeConstraints {
             $0.top.left.right.equalTo(view.safeAreaLayoutGuide)
+            $0.height.equalTo(100)
         }
     }
     
@@ -50,7 +51,7 @@ extension UIViewController: NavigationViewDelegate {
         }
     }
     
-    func changeSearchTextField(_ text: String) {
+    func changeSearchTextField(_ textField: UITextField) {
         
     }
 }

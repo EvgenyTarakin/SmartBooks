@@ -20,7 +20,7 @@ enum TypeNavigationView {
 protocol NavigationViewDelegate: AnyObject {
     func didSelectBackButton()
     func didSelectAdditionButton(_ type: TypeNavigationView)
-    func changeSearchTextField(_ text: String)
+    func changeSearchTextField(_ textField: UITextField)
 }
 
 final class NavigationView: UIView {

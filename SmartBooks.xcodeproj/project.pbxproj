@@ -29,6 +29,8 @@
 		1B3A3E862A751C7E00CEF5C2 /* AdditionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E852A751C7E00CEF5C2 /* AdditionButton.swift */; };
 		1B3A3E8A2A752DE500CEF5C2 /* AdditionReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E892A752DE500CEF5C2 /* AdditionReaderViewController.swift */; };
 		1B3A3E8E2A752E2100CEF5C2 /* AdditionBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E8D2A752E2100CEF5C2 /* AdditionBookViewController.swift */; };
+		1B3A3E902A75489400CEF5C2 /* AdditionReaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E8F2A75489400CEF5C2 /* AdditionReaderPresenter.swift */; };
+		1B3A3E922A755F1F00CEF5C2 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E912A755F1F00CEF5C2 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		1B3A3E852A751C7E00CEF5C2 /* AdditionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionButton.swift; sourceTree = "<group>"; };
 		1B3A3E892A752DE500CEF5C2 /* AdditionReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionReaderViewController.swift; sourceTree = "<group>"; };
 		1B3A3E8D2A752E2100CEF5C2 /* AdditionBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionBookViewController.swift; sourceTree = "<group>"; };
+		1B3A3E8F2A75489400CEF5C2 /* AdditionReaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionReaderPresenter.swift; sourceTree = "<group>"; };
+		1B3A3E912A755F1F00CEF5C2 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			children = (
 				1B3A3E642A742BD700CEF5C2 /* UIViewControllerExtension.swift */,
 				1B3A3E672A742C3500CEF5C2 /* UIColorExtension.swift */,
+				1B3A3E912A755F1F00CEF5C2 /* UITextFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				1B3A3E892A752DE500CEF5C2 /* AdditionReaderViewController.swift */,
+				1B3A3E8F2A75489400CEF5C2 /* AdditionReaderPresenter.swift */,
 			);
 			path = AdditionReader;
 			sourceTree = "<group>";
@@ -324,7 +330,9 @@
 				1B3A3E652A742BD700CEF5C2 /* UIViewControllerExtension.swift in Sources */,
 				1B3A3E6B2A750C8300CEF5C2 /* MainTabBarController.swift in Sources */,
 				1B3A3E6E2A75157E00CEF5C2 /* Font.swift in Sources */,
+				1B3A3E902A75489400CEF5C2 /* AdditionReaderPresenter.swift in Sources */,
 				1B3A3E8A2A752DE500CEF5C2 /* AdditionReaderViewController.swift in Sources */,
+				1B3A3E922A755F1F00CEF5C2 /* UITextFieldExtension.swift in Sources */,
 				1B3A3E472A74264600CEF5C2 /* AppDelegate.swift in Sources */,
 				1B3A3E862A751C7E00CEF5C2 /* AdditionButton.swift in Sources */,
 				1B3A3E492A74264600CEF5C2 /* SceneDelegate.swift in Sources */,
