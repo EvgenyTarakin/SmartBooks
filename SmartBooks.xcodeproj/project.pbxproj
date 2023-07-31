@@ -37,6 +37,7 @@
 		1B3A3EA02A769B0700CEF5C2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */; };
 		1B3A3EA12A769B0700CEF5C2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */; };
 		1B3A3EA42A769B2C00CEF5C2 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA22A769B2C00CEF5C2 /* Data.xcdatamodeld */; };
+		1B3A3EA72A77381400CEF5C2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA62A77381400CEF5C2 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1B3A3EA32A769B2C00CEF5C2 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		1B3A3EA62A77381400CEF5C2 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 		1B3A3E8B2A752E0000CEF5C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1B3A3EA52A7737FF00CEF5C2 /* Cell */,
 				1B3A3E5F2A74280200CEF5C2 /* BooksViewController.swift */,
 			);
 			path = Main;
@@ -268,10 +271,18 @@
 			isa = PBXGroup;
 			children = (
 				1B3A3EA22A769B2C00CEF5C2 /* Data.xcdatamodeld */,
-				1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */,
 				1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */,
+				1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		1B3A3EA52A7737FF00CEF5C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3EA62A77381400CEF5C2 /* BookCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +371,7 @@
 				1B3A3E4B2A74264600CEF5C2 /* ReadersViewController.swift in Sources */,
 				1B3A3E822A751AB200CEF5C2 /* NavigationView.swift in Sources */,
 				1B3A3E8E2A752E2100CEF5C2 /* AdditionBookViewController.swift in Sources */,
+				1B3A3EA72A77381400CEF5C2 /* BookCell.swift in Sources */,
 				1B3A3E602A74280200CEF5C2 /* BooksViewController.swift in Sources */,
 				1B3A3E652A742BD700CEF5C2 /* UIViewControllerExtension.swift in Sources */,
 				1B3A3E6B2A750C8300CEF5C2 /* MainTabBarController.swift in Sources */,

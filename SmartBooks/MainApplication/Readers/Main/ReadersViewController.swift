@@ -15,19 +15,18 @@ protocol ReadersViewToPresenter {
     func didSelectMenuFilterButton()
     func didSelectTapOnView()
     func didSelectFilterButton(_ type: TypeFilter)
-    func loadData(_ filter: TypeFilter)
-    func deleteReader(_ reader: Reader, filter: TypeFilter)
+    func loadData()
+    func deleteReader(_ reader: Reader)
 }
 
 final class ReadersViewController: UIViewController {
     
     // MARK: - property
-    private var presenter: ReadersViewToPresenter {
+    private lazy var presenter: ReadersViewToPresenter = {
         return ReadersPresenter(view: self)
-    }
+    }()
     
     private var data: [Reader] = []
-    private var filter: TypeFilter = .overdueBooks
         
     private lazy var backView: UIView = {
         let backView = UIView()
@@ -118,7 +117,7 @@ final class ReadersViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.loadData(filter)
+        presenter.loadData()
     }
     
     // MARK: - override func
@@ -201,7 +200,7 @@ extension ReadersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteItem = UIContextualAction(style: .normal, title: "") {  (contextualAction, view, boolValue) in
-            self.presenter.deleteReader(self.data[indexPath.row], filter: self.filter)
+            self.presenter.deleteReader(self.data[indexPath.row])
         }
         deleteItem.backgroundColor = UIColor(hex: "E9EEF3")
         deleteItem.image = UIImage(named: "trash")
@@ -233,7 +232,6 @@ extension ReadersViewController: ReadersPresenterToView {
     }
     
     func updateFilterMenu(_ type: TypeFilter) {
-        filter = type
         switch type {
         case .alphabet:
             mainFilterButton.setTitle("По алфавиту", for: .normal)

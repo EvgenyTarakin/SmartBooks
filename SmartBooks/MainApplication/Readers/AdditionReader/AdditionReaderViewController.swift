@@ -18,9 +18,9 @@ protocol AdditionReaderViewToPresenter {
 final class AdditionReaderViewController: UIViewController {
     
     // MARK: - property
-    private var presenter: AdditionReaderViewToPresenter {
-        return AdditionReaderPresenter(view: self)
-    }
+    private lazy var presenter: AdditionReaderViewToPresenter = {
+        AdditionReaderPresenter(view: self)
+    }()
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()

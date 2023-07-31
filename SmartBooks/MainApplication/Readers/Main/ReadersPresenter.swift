@@ -22,6 +22,7 @@ final class ReadersPresenter {
     
     private let dataManager = DataManager()
     private var readers: [Reader] = []
+    private var filter: TypeFilter = .overdueBooks
     
     // MARK: - init
     required init(view: ReadersPresenterToView) {
@@ -41,6 +42,7 @@ extension ReadersPresenter: ReadersViewToPresenter {
     }
     
     func didSelectFilterButton(_ type: TypeFilter) {
+        filter = type
         switch type {
         case .alphabet:
             readers = dataManager.reader.sorted { $0.name ?? "" < $1.name ?? ""}
@@ -53,12 +55,12 @@ extension ReadersPresenter: ReadersViewToPresenter {
         view.updateFilterMenu(type)
     }
     
-    func loadData(_ filter: TypeFilter) {
+    func loadData() {
         didSelectFilterButton(filter)
     }
     
-    func deleteReader(_ reader: Reader, filter: TypeFilter) {
+    func deleteReader(_ reader: Reader) {
         dataManager.deleteReader(reader)
-        loadData(filter)
+        loadData()
     }
 }
