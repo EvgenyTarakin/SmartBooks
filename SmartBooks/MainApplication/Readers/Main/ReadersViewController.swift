@@ -7,7 +7,6 @@
 
 import UIKit
 import SnapKit
-import SwipeCellKit
 
 // MARK: - protocol
 protocol ReadersViewToPresenter {
@@ -167,9 +166,8 @@ final class ReadersViewController: UIViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension ReadersViewController: UITableViewDelegate {
-    
-}
+extension ReadersViewController: UITableViewDelegate {}
+
 // MARK: - UITableViewDataSource
 extension ReadersViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {

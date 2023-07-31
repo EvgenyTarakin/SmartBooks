@@ -23,12 +23,23 @@ final class BookCell: UICollectionViewCell {
         imageView.snp.makeConstraints {
             $0.height.equalTo(frame.height / 1.5)
         }
+        nameBookLabel.snp.makeConstraints {
+            $0.height.greaterThanOrEqualTo(20)
+        }
+        authorBookLabel.snp.makeConstraints {
+            $0.height.greaterThanOrEqualTo(20)
+        }
+        countBookLabel.snp.makeConstraints {
+            $0.height.equalTo(20)
+        }
         
         return stackView
     }()
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.layer.cornerRadius = 12
+        imageView.layer.masksToBounds = true
         
         return imageView
     }()
@@ -83,7 +94,7 @@ final class BookCell: UICollectionViewCell {
     }
     
     // MARK: - func
-    func configurate(name: String, author: String, count: Int64, image: UIImage = UIImage()) {
+    func configurate(name: String, author: String, count: Int64, image: UIImage) {
         nameBookLabel.text = name
         authorBookLabel.text = author
         countBookLabel.text = "\(count)"
@@ -96,7 +107,7 @@ final class BookCell: UICollectionViewCell {
         addSubview(stackView)
         
         stackView.snp.makeConstraints {
-            $0.top.bottom.left.right.equalToSuperview()
+            $0.top.left.right.equalToSuperview()
         }
     }
 

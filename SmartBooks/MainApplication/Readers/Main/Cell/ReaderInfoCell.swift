@@ -7,7 +7,6 @@
 
 import UIKit
 import SnapKit
-import SwipeCellKit
 
 // MARK: - InfoBook
 enum InfoBook {

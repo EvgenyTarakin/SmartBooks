@@ -25,13 +25,14 @@ final class BooksPresenter {
     }
 }
 
-// MARK: -
+// MARK: - BooksViewToPresenter
 extension BooksPresenter: BooksViewToPresenter {
     func viewDidLoad() {
         book = dataManager.books
     }
     
     func viewWillAppear() {
+        book = dataManager.books
         view.fetchData(book)
     }
 }

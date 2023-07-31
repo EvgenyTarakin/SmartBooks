@@ -77,9 +77,7 @@ final class BooksViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDelegate
-extension BooksViewController: UICollectionViewDelegate {
-    
-}
+extension BooksViewController: UICollectionViewDelegate {}
 
 // MARK: - UICollectionViewDataSource
 extension BooksViewController: UICollectionViewDataSource {
@@ -96,7 +94,7 @@ extension BooksViewController: UICollectionViewDataSource {
         else { return UICollectionViewCell() }
         if let name = books[indexPath.item].name,
            let author = books[indexPath.item].author {
-            cell.configurate(name: name, author: author, count: books[indexPath.item].count)
+            cell.configurate(name: name, author: author, count: books[indexPath.item].count, image: UIImage(data: books[indexPath.item].image ?? Data()) ?? UIImage())
         }
         
         return cell

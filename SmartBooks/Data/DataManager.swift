@@ -5,7 +5,7 @@
 //  Created by Евгений Таракин on 06.02.2023.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 final class DataManager: Hashable {
@@ -58,13 +58,14 @@ final class DataManager: Hashable {
     }
     
     // Books
-    func saveBook(name: String, author: String, count: Int64) {
+    func saveBook(name: String, author: String, count: Int64, image: UIImage) {
         guard let entity = NSEntityDescription.entity(forEntityName: "Book", in: context) else { return }
         
         let object = Book(entity: entity, insertInto: context)
         object.name = name
         object.author = author
         object.count = count
+        object.image = Data(image.pngData() ?? Data())
         saveContext()
     }
     
