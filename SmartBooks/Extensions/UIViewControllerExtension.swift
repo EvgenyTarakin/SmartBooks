@@ -26,7 +26,7 @@ extension UIViewController {
         }
     }
     
-    @objc private func tapOnView() {
+    @objc func tapOnView() {
         view.endEditing(true)
     }
 }

@@ -25,8 +25,11 @@ final class AdditionReaderPresenter {
     // MARK: - property
     unowned let view: AdditionReaderPresenterToView
     
+    private let dataManager = DataManager()
+    
     private var name: String?
     private var date: String?
+    private var type: Int16?
     
     // MARK: - init
     required init(view: AdditionReaderPresenterToView) {
@@ -51,6 +54,9 @@ extension AdditionReaderPresenter: AdditionReaderViewToPresenter {
         } else {
             name = nameText
             date = dateText
+            type = Int16.random(in: 0...2)
+            guard let name, let date, let type else { return }
+            dataManager.saveReader(name: name, date: date, info: type)
             view.backToMainVC()
         }
     }

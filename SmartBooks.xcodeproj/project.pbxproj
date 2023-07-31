@@ -32,6 +32,11 @@
 		1B3A3E902A75489400CEF5C2 /* AdditionReaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E8F2A75489400CEF5C2 /* AdditionReaderPresenter.swift */; };
 		1B3A3E922A755F1F00CEF5C2 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E912A755F1F00CEF5C2 /* UITextFieldExtension.swift */; };
 		1B3A3E942A75998A00CEF5C2 /* ReadersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E932A75998A00CEF5C2 /* ReadersPresenter.swift */; };
+		1B3A3E972A76253000CEF5C2 /* ReaderInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E962A76253000CEF5C2 /* ReaderInfoCell.swift */; };
+		1B3A3E992A7677B000CEF5C2 /* FilterMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E982A7677B000CEF5C2 /* FilterMenuButton.swift */; };
+		1B3A3EA02A769B0700CEF5C2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */; };
+		1B3A3EA12A769B0700CEF5C2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */; };
+		1B3A3EA42A769B2C00CEF5C2 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA22A769B2C00CEF5C2 /* Data.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +66,11 @@
 		1B3A3E8F2A75489400CEF5C2 /* AdditionReaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionReaderPresenter.swift; sourceTree = "<group>"; };
 		1B3A3E912A755F1F00CEF5C2 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		1B3A3E932A75998A00CEF5C2 /* ReadersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadersPresenter.swift; sourceTree = "<group>"; };
+		1B3A3E962A76253000CEF5C2 /* ReaderInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderInfoCell.swift; sourceTree = "<group>"; };
+		1B3A3E982A7677B000CEF5C2 /* FilterMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterMenuButton.swift; sourceTree = "<group>"; };
+		1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1B3A3EA32A769B2C00CEF5C2 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 			children = (
 				1B3A3E5A2A74267C00CEF5C2 /* AppDelegate */,
 				1B3A3E632A742ACA00CEF5C2 /* CustomUI */,
+				1B3A3E9D2A769AFA00CEF5C2 /* Data */,
 				1B3A3E622A742ABE00CEF5C2 /* Extensions */,
 				1B3A3E6C2A75153A00CEF5C2 /* Font */,
 				1B3A3E5B2A74269100CEF5C2 /* StartApplication */,
@@ -174,6 +185,7 @@
 			children = (
 				1B3A3E812A751AB200CEF5C2 /* NavigationView.swift */,
 				1B3A3E852A751C7E00CEF5C2 /* AdditionButton.swift */,
+				1B3A3E982A7677B000CEF5C2 /* FilterMenuButton.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -212,6 +224,7 @@
 		1B3A3E872A752DBB00CEF5C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1B3A3E952A76251000CEF5C2 /* Cell */,
 				1B3A3E4A2A74264600CEF5C2 /* ReadersViewController.swift */,
 				1B3A3E932A75998A00CEF5C2 /* ReadersPresenter.swift */,
 			);
@@ -241,6 +254,24 @@
 				1B3A3E8D2A752E2100CEF5C2 /* AdditionBookViewController.swift */,
 			);
 			path = AdditionBook;
+			sourceTree = "<group>";
+		};
+		1B3A3E952A76251000CEF5C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3E962A76253000CEF5C2 /* ReaderInfoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B3A3E9D2A769AFA00CEF5C2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1B3A3EA22A769B2C00CEF5C2 /* Data.xcdatamodeld */,
+				1B3A3E9E2A769B0700CEF5C2 /* CoreDataManager.swift */,
+				1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +363,8 @@
 				1B3A3E602A74280200CEF5C2 /* BooksViewController.swift in Sources */,
 				1B3A3E652A742BD700CEF5C2 /* UIViewControllerExtension.swift in Sources */,
 				1B3A3E6B2A750C8300CEF5C2 /* MainTabBarController.swift in Sources */,
+				1B3A3EA02A769B0700CEF5C2 /* CoreDataManager.swift in Sources */,
+				1B3A3EA42A769B2C00CEF5C2 /* Data.xcdatamodeld in Sources */,
 				1B3A3E942A75998A00CEF5C2 /* ReadersPresenter.swift in Sources */,
 				1B3A3E6E2A75157E00CEF5C2 /* Font.swift in Sources */,
 				1B3A3E902A75489400CEF5C2 /* AdditionReaderPresenter.swift in Sources */,
@@ -339,8 +372,11 @@
 				1B3A3E922A755F1F00CEF5C2 /* UITextFieldExtension.swift in Sources */,
 				1B3A3E472A74264600CEF5C2 /* AppDelegate.swift in Sources */,
 				1B3A3E862A751C7E00CEF5C2 /* AdditionButton.swift in Sources */,
+				1B3A3EA12A769B0700CEF5C2 /* DataManager.swift in Sources */,
 				1B3A3E492A74264600CEF5C2 /* SceneDelegate.swift in Sources */,
+				1B3A3E972A76253000CEF5C2 /* ReaderInfoCell.swift in Sources */,
 				1B3A3E682A742C3500CEF5C2 /* UIColorExtension.swift in Sources */,
+				1B3A3E992A7677B000CEF5C2 /* FilterMenuButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +603,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		1B3A3EA22A769B2C00CEF5C2 /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B3A3EA32A769B2C00CEF5C2 /* Data.xcdatamodel */,
+			);
+			currentVersion = 1B3A3EA32A769B2C00CEF5C2 /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1B3A3E3B2A74264600CEF5C2 /* Project object */;
 }
