@@ -45,10 +45,10 @@ extension ReadersPresenter: ReadersViewToPresenter {
         filter = type
         switch type {
         case .alphabet:
-            readers = dataManager.reader.sorted { $0.name ?? "" < $1.name ?? ""}
+            readers = dataManager.readers.sorted { $0.name ?? "" < $1.name ?? ""}
         case .overdueBooks:
-            let overDueReaders = dataManager.reader.filter { $0.info == 0 }
-            let otherReaders = dataManager.reader.filter { $0.info != 0 }
+            let overDueReaders = dataManager.readers.filter { $0.info == 0 }
+            let otherReaders = dataManager.readers.filter { $0.info != 0 }
             readers = overDueReaders + otherReaders
         }
         view.fetchData(readers)

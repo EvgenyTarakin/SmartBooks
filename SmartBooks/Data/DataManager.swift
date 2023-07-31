@@ -13,7 +13,7 @@ final class DataManager: Hashable {
 //    MARK: - property
     private let context = CoreDataManager.persistentContainer.viewContext
     
-    var reader: [Reader] {
+    var readers: [Reader] {
         let fetchRequest: NSFetchRequest<Reader> = Reader.fetchRequest()
         do {
             return try context.fetch(fetchRequest).reversed()
@@ -23,7 +23,18 @@ final class DataManager: Hashable {
         }
     }
     
+    var books: [Book] {
+        let fetchRequest: NSFetchRequest<Book> = Book.fetchRequest()
+        do {
+            return try context.fetch(fetchRequest).reversed()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+            return []
+        }
+    }
+    
 //    MARK: - func
+    // Readers
     func saveReader(name: String, date: String, info: Int16) {
         guard let entity = NSEntityDescription.entity(forEntityName: "Reader", in: context) else { return }
         
@@ -46,6 +57,18 @@ final class DataManager: Hashable {
         saveContext()
     }
     
+    // Books
+    func saveBook(name: String, author: String, count: Int64) {
+        guard let entity = NSEntityDescription.entity(forEntityName: "Book", in: context) else { return }
+        
+        let object = Book(entity: entity, insertInto: context)
+        object.name = name
+        object.author = author
+        object.count = count
+        saveContext()
+    }
+    
+    // MARK: - private func
     private func saveContext() {
         do {
             try context.save()
@@ -54,6 +77,7 @@ final class DataManager: Hashable {
         }
     }
     
+    // MARK: - other
     let uuid = UUID()
     static func ==(lhs: DataManager, rhs: DataManager) -> Bool {
         return lhs.uuid == rhs.uuid

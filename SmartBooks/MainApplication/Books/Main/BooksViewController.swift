@@ -8,13 +8,23 @@
 import UIKit
 import SnapKit
 
+// MARK: - protocol
+protocol BooksViewToPresenter: AnyObject {
+    init(view: BooksPresenterToView)
+    func viewDidLoad()
+    func viewWillAppear()
+}
+
 final class BooksViewController: UIViewController {
     
     // MARK: - property
+    private var books: [Book] = []
+    
+    private lazy var presenter: BooksViewToPresenter = {
+        return BooksPresenter(view: self)
+    }()
+    
     private lazy var collectionView: UICollectionView = {
-//        let layout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .vertical
-
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: makeLayout())
         collectionView.backgroundColor = UIColor(hex: "E9EEF3")
         collectionView.showsHorizontalScrollIndicator = false
@@ -29,6 +39,12 @@ final class BooksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
+        presenter.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
     }
     
     // MARK: - private func
@@ -72,30 +88,25 @@ extension BooksViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return books.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BookCell.reuseIdentifier, for: indexPath) as? BookCell
         else { return UICollectionViewCell() }
+        if let name = books[indexPath.item].name,
+           let author = books[indexPath.item].author {
+            cell.configurate(name: name, author: author, count: books[indexPath.item].count)
+        }
         
         return cell
     }
 }
 
-//// MARK: - UICollectionViewDelegateFlowLayout
-//extension BooksViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let width = (view.frame.width - 56) / 2
-//        let height = width * 2
-//        return CGSize(width: width, height: height)
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        return UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 24
-//    }
-//}
+// MARK: - BooksPresenterToView
+extension BooksViewController: BooksPresenterToView {
+    func fetchData(_ books: [Book]) {
+        self.books = books
+        collectionView.reloadData()
+    }
+}

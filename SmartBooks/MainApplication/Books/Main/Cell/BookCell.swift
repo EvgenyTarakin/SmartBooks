@@ -73,6 +73,23 @@ final class BookCell: UICollectionViewCell {
         super.init(coder: coder)
     }
     
+    // MARK: - override func
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
+        nameBookLabel.text = nil
+        authorBookLabel.text = nil
+        countBookLabel.text = nil
+    }
+    
+    // MARK: - func
+    func configurate(name: String, author: String, count: Int64, image: UIImage = UIImage()) {
+        nameBookLabel.text = name
+        authorBookLabel.text = author
+        countBookLabel.text = "\(count)"
+        imageView.image = image
+    }
+    
     // MARK: - private func
     private func commonInit() {
         backgroundColor = .clear

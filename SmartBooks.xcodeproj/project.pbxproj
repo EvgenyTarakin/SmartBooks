@@ -38,6 +38,7 @@
 		1B3A3EA12A769B0700CEF5C2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */; };
 		1B3A3EA42A769B2C00CEF5C2 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA22A769B2C00CEF5C2 /* Data.xcdatamodeld */; };
 		1B3A3EA72A77381400CEF5C2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA62A77381400CEF5C2 /* BookCell.swift */; };
+		1B3A3EA92A77E34F00CEF5C2 /* BooksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA82A77E34F00CEF5C2 /* BooksPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		1B3A3E9F2A769B0700CEF5C2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1B3A3EA32A769B2C00CEF5C2 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		1B3A3EA62A77381400CEF5C2 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		1B3A3EA82A77E34F00CEF5C2 /* BooksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				1B3A3EA52A7737FF00CEF5C2 /* Cell */,
 				1B3A3E5F2A74280200CEF5C2 /* BooksViewController.swift */,
+				1B3A3EA82A77E34F00CEF5C2 /* BooksPresenter.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				1B3A3EA42A769B2C00CEF5C2 /* Data.xcdatamodeld in Sources */,
 				1B3A3E942A75998A00CEF5C2 /* ReadersPresenter.swift in Sources */,
 				1B3A3E6E2A75157E00CEF5C2 /* Font.swift in Sources */,
+				1B3A3EA92A77E34F00CEF5C2 /* BooksPresenter.swift in Sources */,
 				1B3A3E902A75489400CEF5C2 /* AdditionReaderPresenter.swift in Sources */,
 				1B3A3E8A2A752DE500CEF5C2 /* AdditionReaderViewController.swift in Sources */,
 				1B3A3E922A755F1F00CEF5C2 /* UITextFieldExtension.swift in Sources */,
