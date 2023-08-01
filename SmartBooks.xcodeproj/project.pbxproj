@@ -41,6 +41,7 @@
 		1B3A3EA92A77E34F00CEF5C2 /* BooksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EA82A77E34F00CEF5C2 /* BooksPresenter.swift */; };
 		1B3A3EAB2A77FB4900CEF5C2 /* AdditionBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EAA2A77FB4900CEF5C2 /* AdditionBookPresenter.swift */; };
 		1B3A3EAD2A77FDC900CEF5C2 /* LoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EAC2A77FDC900CEF5C2 /* LoadImageView.swift */; };
+		1B3A3EB22A78998400CEF5C2 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A3EB12A78998400CEF5C2 /* UILabelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		1B3A3EA82A77E34F00CEF5C2 /* BooksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksPresenter.swift; sourceTree = "<group>"; };
 		1B3A3EAA2A77FB4900CEF5C2 /* AdditionBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionBookPresenter.swift; sourceTree = "<group>"; };
 		1B3A3EAC2A77FDC900CEF5C2 /* LoadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageView.swift; sourceTree = "<group>"; };
+		1B3A3EB12A78998400CEF5C2 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				1B3A3E642A742BD700CEF5C2 /* UIViewControllerExtension.swift */,
 				1B3A3E672A742C3500CEF5C2 /* UIColorExtension.swift */,
 				1B3A3E912A755F1F00CEF5C2 /* UITextFieldExtension.swift */,
+				1B3A3EB12A78998400CEF5C2 /* UILabelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				1B3A3E902A75489400CEF5C2 /* AdditionReaderPresenter.swift in Sources */,
 				1B3A3E8A2A752DE500CEF5C2 /* AdditionReaderViewController.swift in Sources */,
 				1B3A3E922A755F1F00CEF5C2 /* UITextFieldExtension.swift in Sources */,
+				1B3A3EB22A78998400CEF5C2 /* UILabelExtension.swift in Sources */,
 				1B3A3E472A74264600CEF5C2 /* AppDelegate.swift in Sources */,
 				1B3A3E862A751C7E00CEF5C2 /* AdditionButton.swift in Sources */,
 				1B3A3EA12A769B0700CEF5C2 /* DataManager.swift in Sources */,

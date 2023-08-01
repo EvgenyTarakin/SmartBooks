@@ -98,6 +98,7 @@ final class BookCell: UICollectionViewCell {
         nameBookLabel.text = name
         authorBookLabel.text = author
         countBookLabel.text = "\(count) шт/ из \(count) шт"
+        countBookLabel.highlight(searchedText: "/ из \(count) шт", color: UIColor(hex: "969DA8"), font: Font.medium.size(15))
         imageView.image = image
     }
     
