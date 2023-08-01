@@ -17,7 +17,7 @@ final class BookCell: UICollectionViewCell {
         let stackView = UIStackView(arrangedSubviews: [imageView, nameBookLabel,
                                                        authorBookLabel, countBookLabel])
         stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fill
         stackView.spacing = 8
         
         imageView.snp.makeConstraints {
@@ -97,7 +97,7 @@ final class BookCell: UICollectionViewCell {
     func configurate(name: String, author: String, count: Int64, image: UIImage) {
         nameBookLabel.text = name
         authorBookLabel.text = author
-        countBookLabel.text = "\(count)"
+        countBookLabel.text = "\(count) шт/ из \(count) шт"
         imageView.image = image
     }
     
@@ -108,6 +108,7 @@ final class BookCell: UICollectionViewCell {
         
         stackView.snp.makeConstraints {
             $0.top.left.right.equalToSuperview()
+            $0.bottom.lessThanOrEqualToSuperview()
         }
     }
 
